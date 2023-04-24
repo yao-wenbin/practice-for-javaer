@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo
+# 生产环境中需要添加上账号密码防止关键信息泄漏
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+

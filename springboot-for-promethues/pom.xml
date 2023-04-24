@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Demos</artifactId>
+        <groupId>com.ywb</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot-for-promethues</artifactId>
+
+    <properties>
+        <spring-boot-vesrion>2.6.8</spring-boot-vesrion>
+        <!--most used version-->
+        <micrometer-version>1.9.3</micrometer-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot-vesrion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring-boot-vesrion}</version>
+        </dependency>
+
+        <!-- 由于actuator的/metrics虽然有很多的信息，但是其数据格式不适用于Prometheus，所以引入micrometer的依赖为我们创建一个/prometheus数据采集接口专门适配prometheus-->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${micrometer-version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
