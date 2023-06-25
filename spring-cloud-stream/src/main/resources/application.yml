@@ -1,0 +1,13 @@
+server:
+  port: 28085
+spring:
+  application:
+    name: rocketmq-broadcast-producer-example
+  cloud:
+    stream:
+        bindings:
+          charon-out-0:
+            destination: charon
+          charon-in-0:
+            destination: charon
+            group: charon

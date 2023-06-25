@@ -1,13 +1,18 @@
 package com.ywb;
 
-import cn.hutool.core.date.DateUtil;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Author yaowenbin
- * @Date 2022/7/17
+ * @Date 2023/6/9
  */
-public class hutool {
+public class MapApi {
+
     public static void main(String[] args) {
 
+
+
     }
+
 }

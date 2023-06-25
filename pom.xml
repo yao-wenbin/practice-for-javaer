@@ -14,12 +14,17 @@
         <module>hutool4To5</module>
         <module>MyBatis</module>
         <module>sharding-jdbc-applications</module>
-        <module>EDD</module>
         <module>remote-debug</module>
         <module>Algorithm</module>
         <module>rest-assured</module>
         <module>springboot-for-promethues</module>
         <module>rocketmq</module>
+        <module>concurrent</module>
+        <module>spring-cloud-stream</module>
+        <module>biz-parent</module>
+        <module>test</module>
+        <module>test/test-container</module>
+        <module>spring</module>
     </modules>
 
     <dependencies>

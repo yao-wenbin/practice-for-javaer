@@ -13,7 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>rocketmq-producer</module>
+        <module>rocketmq-producer-spring-boot</module>
+        <module>rocketmq-consumer-spring-boot</module>
+        <module>rocketmq-acl-demo</module>
         <module>rocketmq-consumer</module>
     </modules>
 
@@ -23,6 +25,12 @@
             <groupId>org.apache.rocketmq</groupId>
             <artifactId>rocketmq-spring-boot-starter</artifactId>
             <version>2.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>5.0.0</version>
         </dependency>
 
     </dependencies>

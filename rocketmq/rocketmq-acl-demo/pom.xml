@@ -9,8 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.yaowb</groupId>
-    <artifactId>rocketmq-consumer</artifactId>
+    <artifactId>rocketmq-acl-demo</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
