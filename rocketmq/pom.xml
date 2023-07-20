@@ -17,6 +17,7 @@
         <module>rocketmq-consumer-spring-boot</module>
         <module>rocketmq-acl-demo</module>
         <module>rocketmq-consumer</module>
+        <module>rocketmq-producer</module>
     </modules>
 
     <dependencies>

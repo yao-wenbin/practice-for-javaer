@@ -32,8 +32,8 @@ public class ProducerApplication implements CommandLineRunner {
         producer.send(message);
 
         // Transaction Message
-        OrderPaidMessage paidMessage = new OrderPaidMessage(order);
-        paidEventProducer.send(paidMessage);
+        // OrderPaidMessage paidMessage = new OrderPaidMessage(order);
+        // paidEventProducer.send(paidMessage);
     }
 
 
