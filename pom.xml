@@ -26,12 +26,16 @@
         <module>test/test-container</module>
         <module>spring</module>
         <module>netty</module>
+        <module>log</module>
+        <module>log/json-format</module>
     </modules>
 
     <properties>
         <junit.version>5.9.2</junit.version>
         <mockito.version>5.2.0</mockito.version>
         <assertj.version>3.24.2</assertj.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>

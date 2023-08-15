@@ -2,6 +2,8 @@ package com.ywb;
 
 import cn.hutool.core.util.StrUtil;
 
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
@@ -9,7 +11,6 @@ import java.util.function.Supplier;
  * @Date 2023/7/3
  */
 public class Obj {
-
 
     /**
      * @param val 判空值
@@ -43,6 +44,18 @@ public class Obj {
      */
     public static String getOrDefault(String val, Supplier<String> defaultSupplier) {
         return StrUtil.isBlank(val) ? defaultSupplier.get() : val;
+    }
+
+    /**
+     * 当val不为空时，返回functino，否则直接返回null
+     * @param val 值
+     * @param function 对值的进一步加工
+     * @return null或者是经过function处理的val
+     * @param <T> 值类型
+     * @param <R> Function加工后的返回值类型
+     */
+    public static <T, R> R orNull(T val, Function<T,R> function) {
+        return val == null ? null : function.apply(val);
     }
 
 }
